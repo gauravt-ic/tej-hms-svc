@@ -23,28 +23,28 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
-	@Column(name = "firstName", nullable = false)
+	@Column(name = "firstName")
 	private String fName;
 
-	@Column(name = "lastName", nullable = false)
+	@Column(name = "lastName")
 	private String lName;
 
-	@Column(name = "dob", nullable = false)
+	@Column(name = "dob")
 	private String dob;
 
-	@Column(name = "email", nullable = false)
+	@Column(name = "email")
 	private String email;
 
-	@Column(name = "age", nullable = false)
+	@Column(name = "age")
 	private int age;
 
-	@Column(name = "phoneNo", nullable = false)
+	@Column(name = "phoneNo")
 	private int phoneNo;
 
-	@Column(name = "userName", nullable = false)
+	@Column(name = "userName")
 	private String userName;
 
-	@Column(name = "password", nullable = false)
+	@Column(name = "password")
 	private String password;
 
 }

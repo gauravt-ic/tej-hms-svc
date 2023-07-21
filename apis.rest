@@ -1,0 +1,15 @@
+@baseurl=http://localhost:8081
+
+### Get All Users
+GET {{baseurl}}/api/v1/users HTTP/1.1
+Content-Type: application/json
+
+### Add user 
+POST {{baseurl}}/api/v1/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "userName": "Tejal",
+    "password": "abcd"
+}
+
