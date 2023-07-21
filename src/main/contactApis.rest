@@ -1,0 +1,6 @@
+@baseurl = Http://localhost:8081
+
+GET {{baseurl}}/api/v1/contacts HTTP/1.1
+Content-Type: application/json
+
+P
