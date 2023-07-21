@@ -1,0 +1,46 @@
+@baseurl=https://localhost:8081
+
+###GetAllAppointments
+GET {{baseurl}}/api/v1/appointments HTTP/1.1
+Content-Type: application/json
+
+##GetAppointmentbyId
+GET {{baseurl}}/api/v1/appointment/2 HTTP/1.1
+Content-Type: application/json
+
+### Create an Appointment 
+POST {{baseurl}}api/v1/appointment HTTP/1.1
+Content-Type: application/json
+
+{
+    "fname":"tejal",
+    "lname":"talele",
+    "gender":"female",
+    "email":"abc@gmail.com",
+    "contact":123345,
+    "doctor":"Dr.Ahire"
+    "doctorFees":23334,
+    "appdate": "2-3-2000",
+    "apptime": "5:56",
+    "userStatus": "Good",
+    "doctorStatus":"bad"
+}
+
+PUT {{baseurl}}/api/v1/appointment/1 HTTP/1.1
+Content-Type: : application/json
+{
+    "fname":"Gaurav",
+    "lname":"talele",
+    "gender":"male",
+    "email":"abcdef@gmail.com",
+    "contact":12334534,
+    "doctor":"Dr.Vadhner"
+    "doctorFees":2333434,
+    "appdate": "2-3-2010",
+    "apptime": "6:00 PM",
+    "userStatus": "Bad",
+    "doctorStatus":"Good"
+
+}
+
+
